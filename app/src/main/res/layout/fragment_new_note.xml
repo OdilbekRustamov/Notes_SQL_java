@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Note"
+        android:textSize="28sp"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:padding="5dp"
+        android:id="@+id/et_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rounded"
+        android:hint="Theme"
+        tools:ignore="RtlSymmetry" />
+
+    <EditText
+        android:id="@+id/et_note"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/shape_rounded_note"
+        android:hint="Enter your note!"
+        android:gravity="top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"/>
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/teal_200"/>
+    </LinearLayout>
+</LinearLayout>
